@@ -39,6 +39,10 @@ const config: HardhatUserConfig = {
     },
     rskTestnet: {
       type:"http",
+      chainId:31,
+      url: configVariable("RSK_TESTNET_RPC_URL"),
+      accounts: [configVariable("RSK_TESTNET_PRIVATE_KEY")],
+    },
   },
 };
 
